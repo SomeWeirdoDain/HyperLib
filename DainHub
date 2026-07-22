@@ -1,0 +1,23 @@
+local PlaceId = game.PlaceId
+
+local games = {
+    -- +1 Click Evolution
+    [133068041935000] = "https://api.jnkie.com/api/v1/luascripts/public/ddab5eebb0a62e51d3c2cf7460fcb72e0b2fa879f3ba210e3b815f7c9623f0ba/download",
+    
+    -- Find and Mark!
+    [104485012391716] = "https://api.jnkie.com/api/v1/luascripts/public/43e74bbdb5c9d905cd95fe8e07cfeacc8409dcd9ba814e2fb85aa4d2595ac68b/download",
+    
+    -- Dino Hunters
+    [119031147890918] = "https://api.jnkie.com/api/v1/luascripts/public/4d9aeeb7f983654bb4eef172fca553b3acaba7e151fa73237d3c8743c30209d6/download",
+    
+    -- Chicken Farm
+    [137233438285284] = "https://api.jnkie.com/api/v1/luascripts/public/3d097cb3f61e4aa7295b76594dc030514957f15661ee63a20737416459f6f6d0/download",
+}
+
+local scriptUrl = games[PlaceId]
+
+if scriptUrl then
+    loadstring(game:HttpGet(scriptUrl))()
+else
+    warn("DainHub: No script found for Place ID: " .. tostring(PlaceId))
+end
