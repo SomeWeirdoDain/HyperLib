@@ -12,6 +12,9 @@ local games = {
     
     -- Chicken Farm
     [137233438285284] = "https://api.jnkie.com/api/v1/luascripts/public/3d097cb3f61e4aa7295b76594dc030514957f15661ee63a20737416459f6f6d0/download",
+
+    -- +1 Bottle Flip Obby Escape
+    [75626443136851] = "https://api.jnkie.com/api/v1/luascripts/public/2e904685ee866e979141d1bf707e3b021a1cc1b15f674cda1369060df7bb56b5/download",
 }
 
 local scriptUrl = games[PlaceId]
