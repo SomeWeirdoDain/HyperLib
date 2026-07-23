@@ -1,4 +1,5 @@
 local PlaceId = game.PlaceId
+local fallbackUrl = "https://api.jnkie.com/api/v1/luascripts/public/5397ba5ef591d3db034e423a984f406b493addc2c27453c2d73851c804583816/download" -- Replace with your default link
 
 local games = {
     -- +1 Click Evolution
@@ -16,13 +17,14 @@ local games = {
     -- +1 Bottle Flip Obby Escape
     [75626443136851] = "https://api.jnkie.com/api/v1/luascripts/public/2e904685ee866e979141d1bf707e3b021a1cc1b15f674cda1369060df7bb56b5/download",
 
-    --BABFT
+    -- BABFT
     [537413528] = "https://api.jnkie.com/api/v1/luascripts/public/08e04270d2b0b0ca0bd59550fba965162c8d5848e78cbd65e914fa0582ba0e83/download"
 }
 
-local scriptUrl = games[PlaceId]
+-- Uses the mapped URL, or defaults to fallbackUrl if the PlaceId isn't found
+local scriptUrl = games[PlaceId] or fallbackUrl
 
-if scriptUrl then
+if scriptUrl and scriptUrl ~= "" then
     loadstring(game:HttpGet(scriptUrl))()
 else
     warn("DainHub: No script found for Place ID: " .. tostring(PlaceId))
