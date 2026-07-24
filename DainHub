@@ -22,6 +22,9 @@ local games = {
 
     -- +1 Pickaxe Swing Escape
     [82554996468034] = "https://api.jnkie.com/api/v1/luascripts/public/cb09d74fc789651b46d408a673aeaac8bd1771881be94b54afbc38074e75b54a/download",
+
+    -- Build An Ore Crusher
+    [71785281157268] = "https://api.jnkie.com/api/v1/luascripts/public/e27820c214b931789bf658ccd33904aca440953544768de21e921f2897d9ce23/download",
 }
 
 -- Uses the mapped URL, or defaults to fallbackUrl if the PlaceId isn't found
