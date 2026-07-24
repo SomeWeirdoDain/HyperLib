@@ -18,7 +18,10 @@ local games = {
     [75626443136851] = "https://api.jnkie.com/api/v1/luascripts/public/2e904685ee866e979141d1bf707e3b021a1cc1b15f674cda1369060df7bb56b5/download",
 
     -- BABFT
-    [537413528] = "https://api.jnkie.com/api/v1/luascripts/public/08e04270d2b0b0ca0bd59550fba965162c8d5848e78cbd65e914fa0582ba0e83/download"
+    [537413528] = "https://api.jnkie.com/api/v1/luascripts/public/08e04270d2b0b0ca0bd59550fba965162c8d5848e78cbd65e914fa0582ba0e83/download",
+
+    -- +1 Pickaxe Swing Escape
+    [82554996468034] = "https://api.jnkie.com/api/v1/luascripts/public/cb09d74fc789651b46d408a673aeaac8bd1771881be94b54afbc38074e75b54a/download",
 }
 
 -- Uses the mapped URL, or defaults to fallbackUrl if the PlaceId isn't found
