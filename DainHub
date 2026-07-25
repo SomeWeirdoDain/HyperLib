@@ -1,5 +1,25 @@
+-------------------------------------------------------------------------------
+-- GLOBAL ANTI-AFK INITIALIZATION
+-------------------------------------------------------------------------------
+pcall(function()
+    local Players = game:GetService("Players")
+    local VirtualUser = game:GetService("VirtualUser")
+    local LocalPlayer = Players.LocalPlayer
+
+    if LocalPlayer and not _G.GlobalAntiAFKConnected then
+        _G.GlobalAntiAFKConnected = true
+        LocalPlayer.Idled:Connect(function()
+            VirtualUser:CaptureController()
+            VirtualUser:ClickButton2(Vector2.new())
+        end)
+    end
+end)
+
+-------------------------------------------------------------------------------
+-- LOADER LOGIC
+-------------------------------------------------------------------------------
 local PlaceId = game.PlaceId
-local fallbackUrl = "https://api.jnkie.com/api/v1/luascripts/public/5397ba5ef591d3db034e423a984f406b493addc2c27453c2d73851c804583816/download" -- Replace with your default link
+local fallbackUrl = "https://api.jnkie.com/api/v1/luascripts/public/5397ba5ef591d3db034e423a984f406b493addc2c27453c2d73851c804583816/download"
 
 local games = {
     -- +1 Click Evolution
