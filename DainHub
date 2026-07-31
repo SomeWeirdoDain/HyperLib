@@ -45,6 +45,9 @@ local games = {
 
     -- Build An Ore Crusher
     [71785281157268] = "https://api.jnkie.com/api/v1/luascripts/public/e27820c214b931789bf658ccd33904aca440953544768de21e921f2897d9ce23/download",
+
+    -- MM2
+    [142823291] = "https://api.jnkie.com/api/v1/luascripts/public/0999252444c9b1b80aba3a6132132313bb158ab4b5d54c2771a129d23cbbb86d/download",
 }
 
 -- Uses the mapped URL, or defaults to fallbackUrl if the PlaceId isn't found
