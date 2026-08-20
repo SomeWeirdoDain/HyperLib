@@ -49,7 +49,7 @@ local games = {
     -- MM2
     [142823291] = "https://api.jnkie.com/api/v1/luascripts/public/0999252444c9b1b80aba3a6132132313bb158ab4b5d54c2771a129d23cbbb86d/download",
 
-    -Idle Ball Bounce
+    -- Idle Ball Bounce
     [136680208905701] = "https://api.jnkie.com/api/v1/luascripts/public/a065b47e6407e20e56c84aadb1cfca9925dd112e052a82b08febd61be40dc3f5/download",
 }
 
